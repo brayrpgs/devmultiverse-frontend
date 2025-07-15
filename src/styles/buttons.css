@@ -1,0 +1,47 @@
+.anchor_button {
+  background-color: #fdfdfd75;
+  text-decoration: underline;
+  padding: 0.2rem;
+  border-radius: 0.25rem;
+  color: black;
+  font-size: x-large;
+}
+
+.anchor_button:hover {
+  transform: scale(1.15);
+  background-color: snow;
+}
+
+.animated_buttons {
+  animation: buttons_glass 1s ease-out, buttons_pop 0.7s ease-out 0.75s;
+}
+
+@keyframes buttons_glass {
+  0% {
+    filter: blur(10px);
+  }
+
+  50% {
+    filter: blur(5px);
+  }
+
+  100% {
+    filter: blur(0px);
+  }
+
+}
+
+@keyframes buttons_pop {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.15);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+
+}

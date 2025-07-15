@@ -1,0 +1,23 @@
+import { Header } from "../modules/Header";
+
+export function LayoutHomePage() {
+  return (
+    <>
+      {
+        /**
+         * Header component should have a class name for responsive design,
+         * declared in header.css or common.css. 
+         */
+      }
+      <Header class_name="header_responsive glass slide_up_to_down" />
+      <main>
+      </main>
+      <div></div>
+      <div></div>
+      <footer >
+        <nav>
+        </nav>
+      </footer>
+    </>
+  )
+} 

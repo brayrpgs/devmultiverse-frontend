@@ -1,0 +1,48 @@
+.header_responsive {
+  border-radius: .7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-inline: 1rem;
+  overflow: visible;
+}
+
+nav {
+  display: flex;
+}
+
+
+nav.active{
+  display: flex;
+  padding: 1rem;
+  transition: all 1.5s ease-out;
+  left: 80dvw;
+}
+
+@media (max-width: 768px) {
+  .bars {
+    display: block
+  }
+
+  nav {
+    align-items: start;
+    flex-direction: column;
+    gap: 3ch;
+    position: absolute;
+    top: 20dvh;
+    left: 100dvw;
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .bars {
+    display: none;
+  }
+
+  nav {
+    align-items: center;
+    width: 100dvw;
+    justify-content: space-around;
+  }
+}

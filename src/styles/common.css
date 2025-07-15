@@ -1,0 +1,160 @@
+/***************************************************
+ * Colors and Common Styles
+ * This file contains common colors and styles used across the application.
+ ***************************************************/
+:root {
+  --background-default: linear-gradient(#66CCCC, #008888);
+}
+
+/* variables de colores*/
+/*
+  menta 0(claro)-10(oscuro)
+  [
+  "#CBFBFB",
+  "#9FEFEF",
+  "#7EDEDE",
+  "#66CCCC",
+  "#3ACDCD",
+  "#21C1C1",
+  "#0FB3B3",
+  "#00A8A8",
+  "#009E9E",
+  "#008888"
+  ]
+  */
+/* amarillo  0(claro)-10(oscuro)*/
+/*[
+  "#FBFBCB",
+  "#EFEF9F",
+  "#DEDE7E",
+  "#CCCC66",
+  "#CDCD3A",
+  "#C1C121",
+  "#B3B30F",
+  "#A8A800",
+  "#9E9E00",
+  "#888800"
+]*/
+/* verde  0(claro)-10(oscuro)*/
+/*
+[
+  "#4CFFED",
+  "#1EFFE9",
+  "#00FFE5",
+  "#00FFD1",
+  "#00E1B7",
+  "#00C5A1",
+  "#009E83",
+  "#009579",
+  "#008068",
+  "#006E5A",
+  "#005F4D",
+  "#005142",
+  "#004639"
+]
+*/
+/* morado  0(claro)-10(oscuro)*/
+/*
+[
+  "#CBCBFB",
+  "#9F9FEF",
+  "#7E7EDE",
+  "#6666CC",
+  "#3A3ACD",
+  "#2121C1",
+  "#0F0FB3",
+  "#0000A8",
+  "#00009E",
+  "#000088"
+]
+*/
+/* cafe  0(claro)-10(oscuro)*/
+/*
+[
+  "#FFF2EA",
+  "#FFC8A8",
+  "#FFA77A",
+  "#F28C5A",
+  "#E07743",
+  "#CC6633",
+  "#BC541F",
+  "#AE440E",
+  "#A33600",
+  "#992A00",
+  "#832400",
+  "#711F00"
+]
+*/
+/* purpura  0(claro)-10(oscuro)*/
+/*
+[
+  "#FFEAFF",
+  "#FFA8FF",
+  "#FF7AFF",
+  "#F25AF2",
+  "#E043E0",
+  "#CC33CC",
+  "#BC1FBC",
+  "#AE0EAE",
+  "#A300A3",
+  "#990099",
+  "#830083",
+  "#710071"
+]
+*/
+/* rojo  (claro)-(oscuro)*/
+/*
+[
+  "#FFCDCD",
+  "#FF8E8E",
+  "#FF6666",
+  "#FF2121",
+  "#FF0000",
+  "#F90000",
+  "#D60000",
+  "#B80000",
+  "#9E0000"
+]
+*/
+/*negro #000000*/
+
+/****************************************************
+    * Common Styles
+    * This file contains common styles used across the application.
+    * It is imported in the main entry point of the application.
+****************************************************/
+* {
+  font-family: 'Times New Roman', Times, serif;
+  transition: all 1s ease-out;
+}
+
+body {
+  background: var(--background-default);
+  background-repeat: no-repeat;
+  width: 100dvw;
+  height: 100dvh;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.glass {
+  backdrop-filter: blur(10px);
+  border: 1px snow solid;
+  box-shadow: inset 0 0 5px 0px snow;
+  padding: .25rem;
+  transition: all 1s ease-out;
+}
+
+.slide_up_to_down {
+  animation: slide_up_to_down 1s cubic-bezier(0.46, 0.53, 0, 0.92);
+}
+
+@keyframes slide_up_to_down {
+  0% {
+    transform: translateY(-100vh);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
