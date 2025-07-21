@@ -11,8 +11,7 @@ export function LayoutHomePage() {
          */
       }
       <Header class_name="header_responsive glass slide_up_to_down" />
-      <main style={{ minHeight: 'calc(100vh - 300px)', padding: '1rem' }}>
-        {/* Contenido principal aquí */}
+      <main>        
       </main>
       <Footer class_name="footer_responsive glass slide_down_to_up"/>
     </>

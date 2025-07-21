@@ -3,7 +3,8 @@
  * This file contains common colors and styles used across the application.
  ***************************************************/
 :root {
-  --background-default: linear-gradient(#008888, #008888);
+  /*--background-default: linear-gradient(#008888, #008888);*/
+  --background-default: url(/src/assets/test.jpg);
 }
 
 /* variables de colores*/
