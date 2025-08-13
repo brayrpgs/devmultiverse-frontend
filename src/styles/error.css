@@ -28,3 +28,17 @@ body {
   margin: 1rem 0;
   max-width: 600px;
 }
+
+.slide_down_to_up {
+  animation: slide_down_to_up 1s cubic-bezier(0.46, 0.53, 0, 0.92);
+}
+
+@keyframes slide_down_to_up {
+  0% {
+    transform: translateY(100vh);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}

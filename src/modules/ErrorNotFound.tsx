@@ -7,9 +7,10 @@ interface ErrorProps {
 
 export function ErrorNotFound({ class_name }: ErrorProps) {
   return (
-    <div className={class_name ? class_name : "error"}>
+    <div className={class_name ? class_name : "error slide_up_to_down"}>
       <h1>Error 404</h1>
       <p>Page not found</p>
     </div>
   );
 }
+
