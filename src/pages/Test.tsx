@@ -4,7 +4,7 @@ const Test: React.FC = () => {
       <p>page for Test</p>
       <button className="glass">Click me</button>
       <input type="button" value="Click me" className="glass" />
-      <input type="checkbox" name="testCheckbox" id="testCheckbox" className="glass" />
+      <input type="checkbox" name="testCheckbox" id="" className="glass" />
       <input type="color" name="" id="" className="glass" />
       <input type="date" name="" id="" className="glass" />
       <input type="datetime-local" name="" id="" className="glass" />

@@ -22,12 +22,13 @@
   --color-primary-glass: transparent;
   --color-secondary-glass: #ffffff94;
   --color-accent-glass: #ffffff;
-  --blur-primary-glass: blur(3px);
+  --blur-primary-glass: blur(2px);
   --blur-secondary-glass: blur(6px);
   /** Other Common Styles **/
   --border-radius: .5rem;
-  --color-font-light: black;
-  --color-font-dark: #ffffff;
+  --color-font-light: srgb 0 0 0;
+  --color-font-dark: srgb 1 1 1;
+  --font-size-default: 1rem;
 }
 
 
@@ -51,8 +52,8 @@ body {
 }
 
 /****************************************************
- * Glass Button Style
- * This section contains styles for glass effect buttons.
+ * Glass Style
+ * This section contains styles for glass effect elements.
  ****************************************************/
 .glass {
   backdrop-filter: var(--blur-primary-glass);
@@ -63,11 +64,14 @@ body {
   border-radius: var(--border-radius);
   border: none;
   interpolate-size: allow-keywords;
-  font-size: large;
-  margin: auto;
+  margin: 1rem;
+  box-shadow: 2px 2px 4px 1px color( var(--color-font-light) / 0.5);
+  font-size: var(--font-size-default);
 }
 
-.glass:hover {
+
+
+.glass:hover , .glass:focus {
   backdrop-filter: var(--blur-secondary-glass);
   outline: .5px solid var(--color-accent-glass);
   background: var(--color-secondary-glass);
