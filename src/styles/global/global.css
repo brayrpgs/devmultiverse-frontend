@@ -1,0 +1,91 @@
+/***************************************************
+ * Colors and Common Styles
+ * This file contains common colors and styles used across the application.
+ ***************************************************/
+:root {
+  --background-default: url(/src/assets/test.jpg);
+  /** Primary Colors outline **/
+  --color-primary-outline: #008888;
+  --color-secondary-outline: #00AAAA;
+  --color-tertiary-outline: #ffffff75;
+  --color-accent-outline: #00CCCC;
+  --color-border-outline: #00AAAA;
+  --color-border-hover-outline: #008888;
+  /** Primary Colors fill **/
+  --color-primary-fill: #005555;
+  --color-secondary-fill: #007777;
+  --color-tertiary-fill: #ffffff75;
+  --color-accent-fill: #009999;
+  --color-border-fill: #007777;
+  --color-border-hover-fill: #005555;
+  /** Primary Colors glass **/
+  --color-primary-glass: transparent;
+  --color-secondary-glass: #ffffff6e;
+  /** Other Common Styles **/
+  --border-radius: 1rem;
+  --color-font-ligth: black;
+  --color-font-dark: #ffffff;
+}
+
+
+/****************************************************
+    * Common Styles
+    * This file contains common styles used across the application.
+    * It is imported in the main entry point of the application.
+****************************************************/
+* {
+  font-family: 'Times New Roman', Times, serif;
+  transition: all 1s ease-out;
+}
+
+body {
+  background: var(--background-default);
+  background-repeat: no-repeat;
+  width: 100dvw;
+  height: 100dvh;
+  background-position: center;
+  background-size: cover;
+}
+
+button.glass {
+  backdrop-filter: blur(3px);
+  color: var(--color-font-light);
+  cursor: pointer;
+  background-color: transparent;
+  outline: .5px solid var(--color-border);
+  border-radius: var(--border-radius);
+  border: none;
+  width: 100%;
+}
+
+.slide_up_to_down {
+  animation: slide_up_to_down 1s cubic-bezier(0.46, 0.53, 0, 0.92);
+}
+
+/******************************************************
+ * Slide Animations
+ * This section contains slide up and slide down animations.
+ ****************************************************/
+@keyframes slide_up_to_down {
+  0% {
+    transform: translateY(-100vh);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.slide_down_to_up {
+  animation: slide_down_to_up 1s cubic-bezier(0.46, 0.53, 0, 0.92);
+}
+
+@keyframes slide_down_to_up {
+  0% {
+    transform: translateY(100vh);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
