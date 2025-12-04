@@ -8,7 +8,6 @@ interface Props {
 
 export const ThemeProvider = ({ children }: Props) => {
   const [theme, setTheme] = useState<Theme>(Theme.Light)
-
   return (
     <ThemeContext.Provider
       value={{
