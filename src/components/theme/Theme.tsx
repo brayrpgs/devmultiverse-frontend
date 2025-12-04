@@ -1,13 +1,13 @@
 import { useContext } from "react"
 import { ThemeContext } from "../../context/ThemeContext"
-import {Theme as ThemeEnum} from '../../enums/Theme'
+import { Theme as ThemeEnum } from '../../enums/Theme'
 
 /**
  * this component is used to display and toggle the current theme
  * it is a stateful component that uses the ThemeContext to get the current theme and the toggleTheme method
  * @returns 
  */
-export const Theme = () => {
+export const Theme: React.FC = () => {
   const theme = useContext(ThemeContext)
 
   const handleThemeToggle = () => {
